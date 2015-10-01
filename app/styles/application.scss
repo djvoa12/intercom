@@ -1,0 +1,63 @@
+$black: #000;
+$green: #00b200;
+$grey: #d3d3d3;
+$light-grey: #e4e4e4;
+$lightest-grey: #fafafa;
+$peach-red: #ff1919;
+$red: #ff0000;
+$solid-red: #e50000;
+$white: #ffffff;
+
+@mixin header-specs {
+  color: $solid-red;
+  font-family: 'armata';
+  font-size: 36px;
+  margin: 0 auto 20px;
+  text-align: center;
+  width: 80%;
+}
+
+body {
+  background: url('images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.nav-container {
+  background: $light-grey;
+  color: white;
+  height: 70px;
+  opacity: 0.6;
+  width: 100%;
+
+  a {
+    color: $peach-red;
+    display: inline-block;
+    font-family: 'armata';
+    line-height: 70px;
+    padding: 0 20px;
+    text-align: center;
+    text-decoration: none;
+
+    &:hover {
+      background: $grey;
+      color: $white;
+    }
+  }
+}
+
+.content-container {
+  background: url('images/halftone.png') repeat center center fixed;
+  margin: 70px auto 0;
+  max-width: 600px;
+  height: 400px;
+  min-width: 500px;
+  opacity: 0.75;
+  overflow: auto;
+  padding: 20px;
+  width: 70%;
+}

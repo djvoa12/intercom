@@ -3,6 +3,7 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'intercom',
+    podModulePrefix: 'intercom/pods',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
@@ -11,6 +12,18 @@ module.exports = function(environment) {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
       }
+    },
+    contentSecurityPolicy: {
+      'connect-src': "'self'",
+      'img-src': "'self'",
+      'style-src': "'self' 'unsafe-inline' https://fonts.googleapis.com",
+      'script-src': "'self'",
+      'font-src': "'self' https://fonts.gstatic.com",
+      'frame-src': "*"
+    },
+
+    'ember-cli-mirage': {
+      enabled: true
     },
 
     APP: {

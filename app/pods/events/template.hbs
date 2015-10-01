@@ -1,0 +1,10 @@
+<header class="events-header">Events</header>
+
+{{#each model as |event|}}
+  <div class="event-container">
+    <header class="event-occasion">{{event.occasion}}</header>
+    <span class="event-date">{{date-format event.month event.day event.year}}</span>
+    <span class="event-count">Number of Invitations: {{event.invitedCount}}</span>
+    {{event-status value=event.cancelled}}
+  </div>
+{{/each}}

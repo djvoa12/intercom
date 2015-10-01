@@ -1,0 +1,8 @@
+<header class="invitation-header">Invited Customers</header>
+
+{{#each sortedValidCustomers as |customer| }}
+  <div class="customer-container">
+    <span class="customer-id">{{customer.user_id}}</span>
+    <span class="customer-name">{{customer.name}}</span>
+  </div>
+{{/each}}
