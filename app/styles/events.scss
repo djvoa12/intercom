@@ -1,0 +1,45 @@
+.events-header {
+  @include header-specs;
+}
+
+.event-container {
+  background: $light-grey;
+  height: 80px;
+  margin-bottom: 10px;
+  position: relative;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .event-occasion {
+    color: $peach-red;
+    font-family: 'armata';
+    font-size: 28px;
+    left: 10px;
+    position: absolute;
+    top: 5px;
+  }
+
+  .event-date {
+    font-family: 'armata';
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  .event-count {
+    bottom: 10px;
+    font-family: 'armata';
+    left: 10px;
+    position: absolute;
+  }
+
+  .event-status {
+    bottom: 10px;
+    font-family: 'armata';
+    position: absolute;
+    right: 10px;
+  }
+}

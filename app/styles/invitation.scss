@@ -1,0 +1,23 @@
+.invitation-header {
+  @include header-specs;
+}
+
+.customer-container {
+  border-bottom: 2px dashed $black;
+  margin: 8px auto;
+  width: 290px;
+
+  .customer-id {
+    display: inline-block;
+    font-family: 'armata';
+    font-size: 20px;
+    width: 50px;
+  }
+
+  .customer-name {
+    display: inline-block;
+    font-family: 'armata';
+    font-size: 20px;
+    width: 230px;
+  }
+}

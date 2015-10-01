@@ -6,6 +6,8 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('invitation');
+  this.route('events');
 });
 
 export default Router;

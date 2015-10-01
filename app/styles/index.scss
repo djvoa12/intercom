@@ -1,0 +1,9 @@
+.index-header {
+  @include header-specs;
+}
+
+.story {
+  font-family: 'armata';
+  line-height: 26px;
+  white-space: pre-wrap;
+}
