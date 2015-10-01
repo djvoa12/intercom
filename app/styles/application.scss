@@ -52,12 +52,17 @@ body {
 
 .content-container {
   background: url('images/halftone.png') repeat center center fixed;
-  margin: 70px auto 0;
+  bottom: 0;
+  margin: auto;
   max-width: 600px;
   height: 400px;
+  left: 0;
   min-width: 500px;
   opacity: 0.75;
   overflow: auto;
   padding: 20px;
+  position: absolute;
+  right: 0;
+  top: 10%;
   width: 70%;
 }
